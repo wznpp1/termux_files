@@ -4,11 +4,12 @@
 #chmod +x ~/termux.sh
 #chmod +x ~/.bashrc
 #source ~/.bashrc
+#sshd
 
 if [ ! -d /data/data/com.termux/files/home/app/ ]; then
     termux-setup-storage 
     sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.bfsu.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list &&apt update && apt upgrade
-    pkg install openssh
+    pkg install openssh libffi proot
     passwd
     sshd
 fi

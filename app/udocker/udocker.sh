@@ -3,7 +3,6 @@
 if [[ ! -x /data/data/com.termux/files/home/app/bin/udocker ]]; then
     pkg install wget python3 ldd binutils
 
-
     mkdir -p ~/app2/udocker
     cd ~/app2/udocker
     python3 -m venv udockervenv
@@ -18,7 +17,7 @@ if [[ ! -x /data/data/com.termux/files/home/app/bin/udocker ]]; then
     pyinstaller ~/app2/udocker/udocker/maincmd.py -F -p `pwd`/udocker -n udocker
 
     ln -s `pwd`/app2/udocker/dist/udocker $HOME/app/bin/udocker
-    chmod +x ~/app/udocker/dist/udocker
+    chmod +x ~/app2/udocker/dist/udocker
     
-    ~/app/bin/udocker install
+    chmod +x ~/app/bin/udocker install
 fi
