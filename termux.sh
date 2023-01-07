@@ -16,7 +16,7 @@ if [ ! -d /data/data/com.termux/files/home/app/ ]; then
     chmod +x ~/termux_files/app/bin/*
 fi
 
-if [ ! -f /data/data/com.termux/files/home/.bashrc ]; then
+if [ ! -s /data/data/com.termux/files/home/.bashrc ]; then
     curl -L https://github.com/wznpp1/termux_files/raw/main/termux.sh > /data/data/com.termux/files/home/.bashrc
 fi
 
@@ -25,7 +25,7 @@ if [[ ! -f /data/data/com.termux/files/home/app/bin/udocker && -d /data/data/com
     /bin/bash ~/app/udocker/udocker.sh
 fi
 
-if [-f /data/data/com.termux/files/home/app/bin/udocker]; then
+if [[ -x /data/data/com.termux/files/home/app/bin/udocker ]]; then
     chmod +x ~/termux_files/app/bin/udocker
 fi
 
