@@ -17,8 +17,8 @@ if [[ ! -x /data/data/com.termux/files/home/app/bin/udocker ]]; then
     tar zxvf udocker-1.3.5.tar.gz
     pyinstaller ~/app2/udocker/udocker/maincmd.py -F -p `pwd`/udocker -n udocker
 
-    cp ~/app2/udocker/dist/udocker ~/app/bin/udocker 
-    ~/app/udocker/dist/udocker install
+    ln -s `pwd`/app2/udocker/dist/udocker $HOME/app/bin/udocker
+    chmod +x ~/app/udocker/dist/udocker
     
-    chmod +x ~/app/bin/udocker
+    ~/app/bin/udocker install
 fi
