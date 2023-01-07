@@ -24,12 +24,7 @@ if [[ ! -x /data/data/com.termux/files/home/app/bin/udocker ]]; then
         git clone https://github.com/wznpp1/termux_files.git
         mv ~/termux_files/app ~/app
         chmod +x ~/app/bin/*
-    fi
-
-    if [[! -f /data/data/com.termux/files/home/app/udocker/udocker.sh ]]; then
-        mkdir -p ~/app/udocker/udocker
         curl -L https://github.com/wznpp1/termux_files/raw/main/app/udocker/udocker.sh > /data/data/com.termux/files/home/app/udocker/udocker.sh
-        chmod +x ~/app/udocker/udocker.sh
     fi
     #/bin/bash ~/app/udocker/udocker.sh
     chmod +x ~/app/bin/udocker
