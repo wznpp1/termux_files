@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/bin/bash
 
 pkg install wget python3 ldd binutils
 

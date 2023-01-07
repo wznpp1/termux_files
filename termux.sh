@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/bin/bash
 
 if [ -d /data/data/com.termux/files/home/app/ ]; then
     termux-setup-storage 
