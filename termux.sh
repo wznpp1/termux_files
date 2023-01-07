@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-#curl -Ls https://github.com/wznpp1/termux_files/raw/main/termux.sh | tee ~/termux.sh ~/.bashrc && bash ~/termux.sh
+#curl -Ls https://github.com/wznpp1/termux_files/raw/main/termux.sh | tee ~/termux.sh ~/.bashrc > /dev/null && bash ~/termux.sh
 
 
 if [ ! -d /data/data/com.termux/files/home/app/ ]; then
