@@ -9,7 +9,16 @@
 if [ ! -d /data/data/com.termux/files/home/app/ ]; then
     termux-setup-storage 
     sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.bfsu.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list &&apt update && apt upgrade
-    pkg install openssh libffi proot
+    pkg install  libffi proot git
+    git clone https://github.com/wznpp1/termux_files.git
+
+    mv ~/termux_files/app/ssh /data/data/com.termux/files/usr/etc/ssh
+    mv ~/termux_files/app ~/app
+
+    chmod +x ~/app/bin/*
+    chmod +x ~/app/udocker/udocker.sh
+
+    pkg install openssh
     passwd
     sshd
 fi
