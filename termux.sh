@@ -54,5 +54,6 @@ if [[ ! -x /data/data/com.termux/files/home/app/bin/udocker || ! -x /data/data/c
     chmod +x ~/app/udocker/udocker.sh
 fi
 
-
-export PATH=/data/data/com.termux/files/home/app/bin:$PATH
+if [[ ! $PATH =~ "/data/data/com.termux/files/home/app/bin" ]]; then
+    export PATH=/data/data/com.termux/files/home/app/bin:$PATH
+fi
