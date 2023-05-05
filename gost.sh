@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#curl -fsSL https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/gost.sh | bash
+#curl -fsSL https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/gost.sh | bash -x
 #netplan apply
 #ifconfig eth0:1 192.168.0.2 up
 
