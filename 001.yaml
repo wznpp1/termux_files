@@ -1,0 +1,33 @@
+services:
+  - name: service-0
+    addr: 10.0.1.56:8081
+    handler:
+      type: auto
+      metadata:
+        interface: 10.0.1.56
+    listener:
+      type: tcp
+      metadata:
+        interface: 10.0.1.56
+    metadata:
+      interface: 10.0.1.56
+
+  - name: service-1
+    addr: 10.0.0.120:8081
+    handler:
+      type: auto
+      metadata:
+        interface: 10.0.0.120
+    listener:
+      type: tcp
+      metadata:
+        interface: 10.0.0.120
+    metadata:
+      interface: 10.0.0.120
+
+log:
+  level: info
+  format: json
+  output: /root/app/gost/out.log
+  localTime: true
+  
