@@ -1,7 +1,8 @@
 #!/bin/bash
 
-#curl -Ls https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/gost.sh
-#chmod +x ~/termux.sh
+#curl -fsSL https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/gost.sh | bash
+#netplan apply
+#ifconfig eth0:1 192.168.0.2 up
 
 
 mkdir -p /root/app/gost
