@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#curl -Ls https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/gost.sh
+#chmod +x ~/termux.sh
+
+
+mkdir -p /root/app/gost
+cd /root/app/gost/ 
+
+wget https://ghproxy.com/https://github.com/go-gost/gost/releases/download/v3.0.0-rc6/gost_3.0.0-rc6_linux_amd64.tar.gz
+tar -zxvf gost_3.0.0-rc6_linux_amd64.tar.gz
+
+chmod +x gost
+apt-get update
+apt-get install -y supervisor
+
+systemctl stop supervisor.service
+cp /etc/supervisor/supervisord.conf /etc/supervisor/supervisord.conf.bak
+cd /etc/supervisor
+wget -O supervisord.conf  https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/supervisord.conf
+systemctl restart supervisor.service
+systemctl enable supervisor.service
+supervisorctl update
+supervisorctl start gost
