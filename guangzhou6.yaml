@@ -1,4 +1,17 @@
 services:
+  - name: service-9
+    addr: 10.0.0.201:65500
+    handler:
+      type: auto
+      metadata:
+        interface: 10.0.1.201
+    listener:
+      type: tcp
+      metadata:
+        interface: 10.0.1.201
+    metadata:
+      interface: 10.0.1.201
+
   - name: service-0
     addr: 10.0.1.10:65500
     handler:
