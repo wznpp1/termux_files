@@ -12,7 +12,7 @@ cd /root/app/gost/
 
 wget https://ghproxy.com/https://github.com/go-gost/gost/releases/download/v3.0.0-rc6/gost_3.0.0-rc6_linux_amd64.tar.gz
 tar -zxvf gost_3.0.0-rc6_linux_amd64.tar.gz
-wget -O 001.yaml  https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/fosan3.yaml
+wget -O /root/app/gost/001.yaml  https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/fosan3.yaml
 
 chmod +x gost
 apt-get update
@@ -21,7 +21,7 @@ apt-get install -y supervisor
 systemctl stop supervisor.service
 cp /etc/supervisor/supervisord.conf /etc/supervisor/supervisord.conf.bak
 cd /etc/supervisor
-wget -O supervisord.conf  https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/supervisord1.conf
+wget -O /etc/supervisor/supervisord.conf  https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/supervisord1.conf
 systemctl restart supervisor.service
 systemctl enable supervisor.service
 supervisorctl update
