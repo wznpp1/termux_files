@@ -6,6 +6,8 @@
 
 #/etc/netplan
 #netplan apply
+#wget -O /etc/netplan/50-cloud-init.yaml  https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/fosan3_netplan.yaml
+
 
 network:
     version: 2
@@ -13,9 +15,17 @@ network:
         eth0:
             dhcp4: true
             addresses:
-                - 10.0.1.56/24
+                - 10.0.1.10/24
+                - 10.0.1.11/24
+                - 10.0.1.12/24
+                - 10.0.1.13/24
+                - 10.0.1.14/24
+                - 10.0.1.15/24
+                - 10.0.1.16/24
+                - 10.0.1.17/24
+                - 10.0.1.18/24
             match:
-                macaddress: fa:16:3e:e5:db:2a
+                macaddress: fa:16:3e:72:d6:c8
             mtu: 1500
             nameservers:
                 addresses:
