@@ -22,7 +22,9 @@ systemctl stop supervisor.service
 cp /etc/supervisor/supervisord.conf /etc/supervisor/supervisord.conf.bak
 cd /etc/supervisor
 wget -O /etc/supervisor/supervisord.conf  https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/supervisord1.conf
-systemctl restart supervisor.service
 systemctl enable supervisor.service
+
+systemctl stop supervisor.service
+systemctl start supervisor.service
 supervisorctl update
 supervisorctl start gost
