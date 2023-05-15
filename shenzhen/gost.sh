@@ -5,6 +5,7 @@
 #netplan apply
 
 #ifconfig eth0:1 192.168.0.2 up
+#source <(curl -L https://go-install.netlify.app/install.sh)
 
 
 mkdir -p /root/app/gost
