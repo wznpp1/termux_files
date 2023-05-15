@@ -15,7 +15,7 @@ network:
       dhcp4: true
       addresses:
         - 192.168.0.10/24
-        
+
         - 192.168.0.14/24
 
         - 192.168.0.18/24
@@ -38,4 +38,4 @@ network:
         addresses:
           - 114.114.114.114
           - 8.8.8.8
-      set-name: eth0
+      set-name: ens3
