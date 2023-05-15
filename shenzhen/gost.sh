@@ -16,8 +16,8 @@ tar -zxvf gost_3.0.0-rc6_linux_amd64.tar.gz
 wget -O /root/app/gost/001.yaml  https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/shenzhen/001.yaml
 
 chmod +x gost
-apt-get update
-apt-get install -y supervisor
+apt update
+apt install -y supervisor
 
 systemctl stop supervisor.service
 cp /etc/supervisor/supervisord.conf /etc/supervisor/supervisord.conf.bak

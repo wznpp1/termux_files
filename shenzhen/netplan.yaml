@@ -38,4 +38,4 @@ network:
         addresses:
           - 114.114.114.114
           - 8.8.8.8
-      set-name: ens3
+      set-name: eth0
