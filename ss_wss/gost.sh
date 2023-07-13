@@ -1,10 +1,6 @@
 #!/bin/bash
 
-#curl -fsSL https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/shenzhen/gost.sh | bash -x
-#/etc/netplan
-#netplan apply
-
-#ifconfig eth0:1 192.168.0.2 up
+#curl -fsSL https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/ss_wss/gost.sh | bash -x
 #source <(curl -L https://go-install.netlify.app/install.sh)
 
 
@@ -13,8 +9,6 @@ cd /root/app/gost/
 
 wget https://ghproxy.com/https://github.com/go-gost/gost/releases/download/v3.0.0-rc6/gost_3.0.0-rc6_linux_amd64.tar.gz
 tar -zxvf gost_3.0.0-rc6_linux_amd64.tar.gz
-wget -O /root/app/gost/001.yaml  https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/shenzhen/001.yaml
-
 chmod +x /root/app/gost/gost
 apt-get update
 apt-get install -y supervisor
@@ -22,9 +16,10 @@ apt-get install -y supervisor
 systemctl stop supervisor.service
 cp /etc/supervisor/supervisord.conf /etc/supervisor/supervisord.conf.bak
 cd /etc/supervisor
-wget -O /etc/supervisor/supervisord.conf  https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/supervisord1.conf
-systemctl enable supervisor.service
+wget -O /etc/supervisor/supervisord.conf  https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/ss_wss/supervisord1.conf
 
+systemctl enable supervisor.service
+supervisord1.conf
 systemctl stop supervisor.service
 systemctl start supervisor.service
 supervisorctl update
