@@ -1,0 +1,126 @@
+services:
+- name: service-0
+  addr: 192.168.0.13
+  handler:
+    type: auto
+    metadata:
+      interface: 192.168.0.13
+  listener:
+    type: tcp
+    metadata:
+      interface: 192.168.0.13
+  metadata:
+    interface: 192.168.0.13
+- name: service-1
+  addr: 192.168.0.14
+  handler:
+    type: auto
+    metadata:
+      interface: 192.168.0.14
+  listener:
+    type: tcp
+    metadata:
+      interface: 192.168.0.14
+  metadata:
+    interface: 192.168.0.14
+- name: service-2
+  addr: 192.168.0.15
+  handler:
+    type: auto
+    metadata:
+      interface: 192.168.0.15
+  listener:
+    type: tcp
+    metadata:
+      interface: 192.168.0.15
+  metadata:
+    interface: 192.168.0.15
+- name: service-3
+  addr: 192.168.0.16
+  handler:
+    type: auto
+    metadata:
+      interface: 192.168.0.16
+  listener:
+    type: tcp
+    metadata:
+      interface: 192.168.0.16
+  metadata:
+    interface: 192.168.0.16
+- name: service-4
+  addr: 192.168.0.17
+  handler:
+    type: auto
+    metadata:
+      interface: 192.168.0.17
+  listener:
+    type: tcp
+    metadata:
+      interface: 192.168.0.17
+  metadata:
+    interface: 192.168.0.17
+- name: service-5
+  addr: 192.168.0.18
+  handler:
+    type: auto
+    metadata:
+      interface: 192.168.0.18
+  listener:
+    type: tcp
+    metadata:
+      interface: 192.168.0.18
+  metadata:
+    interface: 192.168.0.18
+- name: service-6
+  addr: 192.168.0.19
+  handler:
+    type: auto
+    metadata:
+      interface: 192.168.0.19
+  listener:
+    type: tcp
+    metadata:
+      interface: 192.168.0.19
+  metadata:
+    interface: 192.168.0.19
+- name: service-7
+  addr: 192.168.0.20
+  handler:
+    type: auto
+    metadata:
+      interface: 192.168.0.20
+  listener:
+    type: tcp
+    metadata:
+      interface: 192.168.0.20
+  metadata:
+    interface: 192.168.0.20
+- name: service-8
+  addr: 192.168.0.21
+  handler:
+    type: auto
+    metadata:
+      interface: 192.168.0.21
+  listener:
+    type: tcp
+    metadata:
+      interface: 192.168.0.21
+  metadata:
+    interface: 192.168.0.21
+- name: service-166
+  addr: 192.168.0.166
+  handler:
+    type: auto
+    metadata:
+      interface: 192.168.0.166
+  listener:
+    type: tcp
+    metadata:
+      interface: 192.168.0.166
+  metadata:
+    interface: 192.168.0.166
+log:
+  level: info
+  format: json
+  output: /root/app/gost/out.log
+  localtime: true
