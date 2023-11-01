@@ -25,7 +25,7 @@ network:
         - 192.168.0.21/24
         - 192.168.0.166/24
       match:
-        macaddress: fa:16:3e:3d:94:9d
+        macaddress: fa:16:3e:76:ce:42
       mtu: 1500
       nameservers:
         addresses:
