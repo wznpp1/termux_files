@@ -6,7 +6,7 @@
 
 #/etc/netplan
 #netplan apply
-#wget -O /etc/netplan/50-cloud-init.yaml  https://ghproxy.com/https://github.com/wznpp1/termux_files/raw/main/guangzhou6/netplan.yaml
+#wget -O /etc/netplan/50-cloud-init.yaml  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/guangzhou6/netplan.yaml
 
 network:
     version: 2
