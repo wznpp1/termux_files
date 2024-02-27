@@ -21,7 +21,7 @@ apt-get install -y supervisor
 systemctl stop supervisor.service
 cp /etc/supervisor/supervisord.conf /etc/supervisor/supervisord.conf.bak
 cd /etc/supervisor
-wget -O /etc/supervisor/supervisord.conf  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/supervisord1.conf
+wget -O /etc/supervisor/supervisord.conf  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/supervisord.conf
 systemctl enable supervisor.service
 
 systemctl stop supervisor.service
