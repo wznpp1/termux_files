@@ -24,9 +24,11 @@ cd /etc/supervisor
 wget -O /etc/supervisor/supervisord.conf  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/supervisord1.conf
 systemctl enable supervisor.service
 
+
 systemctl stop supervisor.service
 systemctl start supervisor.service
+supervisord -c /etc/supervisor/supervisord.conf
+
 supervisorctl update
 supervisorctl start gost
 
-supervisord -c /etc/supervisor/supervisord.conf
