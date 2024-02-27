@@ -28,3 +28,5 @@ systemctl stop supervisor.service
 systemctl start supervisor.service
 supervisorctl update
 supervisorctl start gost
+
+supervisord -c /etc/supervisor/supervisord.conf
