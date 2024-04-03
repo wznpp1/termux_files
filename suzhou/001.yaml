@@ -115,6 +115,19 @@ services:
               interface: 192.168.0.9
       metadata:
           interface: 192.168.0.9
+
+    - name: service-9
+      addr: 192.168.0.10:65500
+      handler:
+          type: auto
+          metadata:
+              interface: 192.168.0.10
+      listener:
+          type: tcp
+          metadata:
+              interface: 192.168.0.10
+      metadata:
+          interface: 192.168.0.10
 log:
     level: info
     format: json
