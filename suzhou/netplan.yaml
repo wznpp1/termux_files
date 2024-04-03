@@ -1,0 +1,42 @@
+# This file is generated from information provided by
+# the datasource.  Changes to it will not persist across an instance.
+# To disable cloud-init's network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+
+#/etc/netplan
+#netplan apply
+#wget -O /etc/netplan/00-installer-config.yaml  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/shenzhen/netplan.yaml
+
+network:
+    version: 2
+    ethernets:
+        eth0:
+            dhcp4: true
+            addresses:
+                - 192.168.0.2/24
+
+                - 192.168.0.3/24
+
+                - 192.168.0.5/24
+
+                - 192.168.0.6/24
+
+                - 192.168.0.7/24
+
+                - 192.168.0.4/24
+
+                - 192.168.0.130/24
+
+                - 192.168.0.8/24
+
+                - 192.168.0.9/24
+            match:
+                macaddress: fa:16:3e:17:6f:f1
+
+            mtu: 1500
+            nameservers:
+                addresses:
+                    - 114.114.114.114
+                    - 8.8.8.8
+            set-name: eth0
