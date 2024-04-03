@@ -31,3 +31,4 @@ systemctl stop supervisor.service
 systemctl start supervisor.service
 supervisorctl update
 supervisorctl start gost
+supervisorctl status
