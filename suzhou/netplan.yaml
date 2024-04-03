@@ -6,7 +6,7 @@
 
 #/etc/netplan
 #netplan apply
-#wget -O /etc/netplan/00-installer-config.yaml  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/shenzhen/netplan.yaml
+#wget -O /etc/netplan/00-installer-config.yaml  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/suzhou/netplan.yaml
 
 network:
     version: 2
