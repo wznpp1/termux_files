@@ -9,33 +9,25 @@
 #wget -O /etc/netplan/00-installer-config.yaml  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/shenzhen/netplan.yaml
 
 network:
-  version: 2
-  ethernets:
-    eth0:
-      dhcp4: true
-      addresses:
-        - 192.168.0.10/24
-
-        - 192.168.0.14/24
-
-        - 192.168.0.18/24
-
-        - 192.168.0.11/24
-
-        - 192.168.0.17/24
-
-        - 192.168.0.12/24
-
-        - 192.168.0.16/24
-
-        - 192.168.0.15/24
-
-        - 192.168.0.13/24
-      match:
-        macaddress: fa:16:3e:3d:94:9d
-      mtu: 1500
-      nameservers:
-        addresses:
-          - 114.114.114.114
-          - 8.8.8.8
-      set-name: eth0
+    version: 2
+    ethernets:
+        eth0:
+            dhcp4: true
+            addresses:
+                - 192.168.0.16/24
+                - 192.168.0.13/24
+                - 192.168.0.14/24
+                - 192.168.0.154/24
+                - 192.168.0.20/24
+                - 192.168.0.15/24
+                - 192.168.0.21/24
+                - 192.168.0.19/24
+                - 192.168.0.18/24
+            match:
+                macaddress: fa:16:3e:76:ce:68
+            mtu: 1500
+            nameservers:
+                addresses:
+                    - 114.114.114.114
+                    - 8.8.8.8
+            set-name: eth0

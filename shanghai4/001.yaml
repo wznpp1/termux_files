@@ -1,136 +1,122 @@
 services:
-  - name: service-0
-    addr: 192.168.0.10:65500
-    handler:
-      type: auto
+    - name: service-0
+      addr: 192.168.0.16:65500
+      handler:
+          type: auto
+          metadata:
+              interface: 192.168.0.16
+      listener:
+          type: tcp
+          metadata:
+              interface: 192.168.0.16
       metadata:
-        interface: 192.168.0.10
-    listener:
-      type: tcp
-      metadata:
-        interface: 192.168.0.10
-    metadata:
-      interface: 192.168.0.10
+          interface: 192.168.0.16
 
-  - name: service-1
-    addr: 192.168.0.9:65500
-    handler:
-      type: auto
+    - name: service-1
+      addr: 192.168.0.13:65500
+      handler:
+          type: auto
+          metadata:
+              interface: 192.168.0.13
+      listener:
+          type: tcp
+          metadata:
+              interface: 192.168.0.13
       metadata:
-        interface: 192.168.0.9
-    listener:
-      type: tcp
-      metadata:
-        interface: 192.168.0.9
-    metadata:
-      interface: 192.168.0.9
+          interface: 192.168.0.13
 
-  - name: service-2
-    addr: 192.168.0.14:65500
-    handler:
-      type: auto
+    - name: service-2
+      addr: 192.168.0.14:65500
+      handler:
+          type: auto
+          metadata:
+              interface: 192.168.0.14
+      listener:
+          type: tcp
+          metadata:
+              interface: 192.168.0.14
       metadata:
-        interface: 192.168.0.14
-    listener:
-      type: tcp
-      metadata:
-        interface: 192.168.0.14
-    metadata:
-      interface: 192.168.0.14
+          interface: 192.168.0.14
 
-  - name: service-3
-    addr: 192.168.0.18:65500
-    handler:
-      type: auto
+    - name: service-3
+      addr: 192.168.0.154:65500
+      handler:
+          type: auto
+          metadata:
+              interface: 192.168.0.154
+      listener:
+          type: tcp
+          metadata:
+              interface: 192.168.0.154
       metadata:
-        interface: 192.168.0.18
-    listener:
-      type: tcp
-      metadata:
-        interface: 192.168.0.18
-    metadata:
-      interface: 192.168.0.18
+          interface: 192.168.0.154
 
-  - name: service-4
-    addr: 192.168.0.11:65500
-    handler:
-      type: auto
+    - name: service-4
+      addr: 192.168.0.20:65500
+      handler:
+          type: auto
+          metadata:
+              interface: 192.168.0.20
+      listener:
+          type: tcp
+          metadata:
+              interface: 192.168.0.20
       metadata:
-        interface: 192.168.0.11
-    listener:
-      type: tcp
-      metadata:
-        interface: 192.168.0.11
-    metadata:
-      interface: 192.168.0.11
+          interface: 192.168.0.20
 
-  - name: service-5
-    addr: 192.168.0.17:65500
-    handler:
-      type: auto
+    - name: service-5
+      addr: 192.168.0.15:65500
+      handler:
+          type: auto
+          metadata:
+              interface: 192.168.0.15
+      listener:
+          type: tcp
+          metadata:
+              interface: 192.168.0.15
       metadata:
-        interface: 192.168.0.17
-    listener:
-      type: tcp
-      metadata:
-        interface: 192.168.0.17
-    metadata:
-      interface: 192.168.0.17
+          interface: 192.168.0.15
 
-  - name: service-6
-    addr: 192.168.0.12:65500
-    handler:
-      type: auto
+    - name: service-6
+      addr: 192.168.0.21:65500
+      handler:
+          type: auto
+          metadata:
+              interface: 192.168.0.21
+      listener:
+          type: tcp
+          metadata:
+              interface: 192.168.0.21
       metadata:
-        interface: 192.168.0.12
-    listener:
-      type: tcp
-      metadata:
-        interface: 192.168.0.12
-    metadata:
-      interface: 192.168.0.12
+          interface: 192.168.0.21
 
-  - name: service-7
-    addr: 192.168.0.16:65500
-    handler:
-      type: auto
+    - name: service-7
+      addr: 192.168.0.19:65500
+      handler:
+          type: auto
+          metadata:
+              interface: 192.168.0.19
+      listener:
+          type: tcp
+          metadata:
+              interface: 192.168.0.19
       metadata:
-        interface: 192.168.0.16
-    listener:
-      type: tcp
-      metadata:
-        interface: 192.168.0.16
-    metadata:
-      interface: 192.168.0.16
+          interface: 192.168.0.19
 
-  - name: service-8
-    addr: 192.168.0.15:65500
-    handler:
-      type: auto
+    - name: service-8
+      addr: 192.168.0.18:65500
+      handler:
+          type: auto
+          metadata:
+              interface: 192.168.0.18
+      listener:
+          type: tcp
+          metadata:
+              interface: 192.168.0.18
       metadata:
-        interface: 192.168.0.15
-    listener:
-      type: tcp
-      metadata:
-        interface: 192.168.0.15
-    metadata:
-      interface: 192.168.0.15
-
-  - name: service-9
-    addr: 192.168.0.13:65500
-    handler:
-      type: auto
-      metadata:
-        interface: 192.168.0.13
-    listener:
-      type: tcp
-      metadata:
-        interface: 192.168.0.13
-    metadata:
-      interface: 192.168.0.13
-
+          interface: 192.168.0.18
 log:
-  level: info
-  format: json
-  output: /root/app/gost/out.log
-  localTime: true
+    level: info
+    format: json
+    output: /root/app/gost/out.log
+    localTime: true
