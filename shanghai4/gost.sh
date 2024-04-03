@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#curl -fsSL https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/shanghai4/gost.sh | bash -x
+#curl -fsSL https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/shenzhen/gost.sh | bash -x
 #/etc/netplan
 #netplan apply
 
@@ -13,7 +13,7 @@ cd /root/app/gost/
 
 wget https://gh-proxy.com/https://github.com/go-gost/gost/releases/download/v3.0.0-rc6/gost_3.0.0-rc6_linux_amd64.tar.gz
 tar -zxvf gost_3.0.0-rc6_linux_amd64.tar.gz
-wget -O /root/app/gost/001.yaml  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/shanghai4/001.yaml
+wget -O /root/app/gost/001.yaml  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/shenzhen/001.yaml
 
 chmod +x /root/app/gost/gost
 apt-get update
