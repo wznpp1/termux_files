@@ -1,0 +1,13 @@
+services:
+  - name: service-0
+    addr: :8080
+    handler:
+      type: auto
+    listener:
+      type: tcp
+
+log:
+  level: info
+  format: json
+  output: /root/app/gost/out.log
+  localTime: true
