@@ -1,6 +1,6 @@
 services:
   - name: service-0
-    addr: :8080
+    addr: :65500
     handler:
       type: auto
     listener:
