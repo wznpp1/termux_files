@@ -16,7 +16,7 @@ echo "Description=My Gost4041 Service" >> /etc/systemd/system/Gost4041.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost4041.service
 
 echo "[Service]" >> /etc/systemd/system/Gost4041.service
-echo "ExecStart=/root/app/gost/gost -L 192.168.0.10:65500" >> /etc/systemd/system/Gost4041.service
+echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost4041.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost4041.service
 echo "Restart=always" >> /etc/systemd/system/Gost4041.service
 echo "User=root" >> /etc/systemd/system/Gost4041.service
@@ -24,6 +24,10 @@ echo "NetworkNamespacePath=/var/run/netns/ns4041" >> /etc/systemd/system/Gost404
 
 echo "[Install]" >> /etc/systemd/system/Gost4041.service
 echo "WantedBy=multi-user.target" >> /etc/systemd/system/Gost4041.service
+
+systemctl enable Gost4041.service
+systemctl stop Gost4041.service
+systemctl start Gost4041.service
 
 
 ip link add link eth0 name eth0.1599 type vlan id 1599
@@ -42,7 +46,7 @@ echo "Description=My Gost1599 Service" >> /etc/systemd/system/Gost1599.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost1599.service
 
 echo "[Service]" >> /etc/systemd/system/Gost1599.service
-echo "ExecStart=/root/app/gost/gost -L 192.168.0.9:65500" >> /etc/systemd/system/Gost1599.service
+echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost1599.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost1599.service
 echo "Restart=always" >> /etc/systemd/system/Gost1599.service
 echo "User=root" >> /etc/systemd/system/Gost1599.service
@@ -50,6 +54,10 @@ echo "NetworkNamespacePath=/var/run/netns/ns1599" >> /etc/systemd/system/Gost159
 
 echo "[Install]" >> /etc/systemd/system/Gost1599.service
 echo "WantedBy=multi-user.target" >> /etc/systemd/system/Gost1599.service
+
+systemctl enable Gost1599.service
+systemctl stop Gost1599.service
+systemctl start Gost1599.service
 
 
 ip link add link eth0 name eth0.4070 type vlan id 4070
@@ -68,7 +76,7 @@ echo "Description=My Gost4070 Service" >> /etc/systemd/system/Gost4070.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost4070.service
 
 echo "[Service]" >> /etc/systemd/system/Gost4070.service
-echo "ExecStart=/root/app/gost/gost -L 192.168.0.8:65500" >> /etc/systemd/system/Gost4070.service
+echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost4070.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost4070.service
 echo "Restart=always" >> /etc/systemd/system/Gost4070.service
 echo "User=root" >> /etc/systemd/system/Gost4070.service
@@ -76,6 +84,10 @@ echo "NetworkNamespacePath=/var/run/netns/ns4070" >> /etc/systemd/system/Gost407
 
 echo "[Install]" >> /etc/systemd/system/Gost4070.service
 echo "WantedBy=multi-user.target" >> /etc/systemd/system/Gost4070.service
+
+systemctl enable Gost4070.service
+systemctl stop Gost4070.service
+systemctl start Gost4070.service
 
 
 ip link add link eth0 name eth0.1734 type vlan id 1734
@@ -94,7 +106,7 @@ echo "Description=My Gost1734 Service" >> /etc/systemd/system/Gost1734.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost1734.service
 
 echo "[Service]" >> /etc/systemd/system/Gost1734.service
-echo "ExecStart=/root/app/gost/gost -L 192.168.0.7:65500" >> /etc/systemd/system/Gost1734.service
+echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost1734.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost1734.service
 echo "Restart=always" >> /etc/systemd/system/Gost1734.service
 echo "User=root" >> /etc/systemd/system/Gost1734.service
@@ -102,6 +114,10 @@ echo "NetworkNamespacePath=/var/run/netns/ns1734" >> /etc/systemd/system/Gost173
 
 echo "[Install]" >> /etc/systemd/system/Gost1734.service
 echo "WantedBy=multi-user.target" >> /etc/systemd/system/Gost1734.service
+
+systemctl enable Gost1734.service
+systemctl stop Gost1734.service
+systemctl start Gost1734.service
 
 
 ip link add link eth0 name eth0.569 type vlan id 569
@@ -120,7 +136,7 @@ echo "Description=My Gost569 Service" >> /etc/systemd/system/Gost569.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost569.service
 
 echo "[Service]" >> /etc/systemd/system/Gost569.service
-echo "ExecStart=/root/app/gost/gost -L 192.168.0.6:65500" >> /etc/systemd/system/Gost569.service
+echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost569.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost569.service
 echo "Restart=always" >> /etc/systemd/system/Gost569.service
 echo "User=root" >> /etc/systemd/system/Gost569.service
@@ -128,6 +144,10 @@ echo "NetworkNamespacePath=/var/run/netns/ns569" >> /etc/systemd/system/Gost569.
 
 echo "[Install]" >> /etc/systemd/system/Gost569.service
 echo "WantedBy=multi-user.target" >> /etc/systemd/system/Gost569.service
+
+systemctl enable Gost569.service
+systemctl stop Gost569.service
+systemctl start Gost569.service
 
 
 ip link add link eth0 name eth0.3644 type vlan id 3644
@@ -146,7 +166,7 @@ echo "Description=My Gost3644 Service" >> /etc/systemd/system/Gost3644.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost3644.service
 
 echo "[Service]" >> /etc/systemd/system/Gost3644.service
-echo "ExecStart=/root/app/gost/gost -L 192.168.0.5:65500" >> /etc/systemd/system/Gost3644.service
+echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost3644.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost3644.service
 echo "Restart=always" >> /etc/systemd/system/Gost3644.service
 echo "User=root" >> /etc/systemd/system/Gost3644.service
@@ -154,6 +174,10 @@ echo "NetworkNamespacePath=/var/run/netns/ns3644" >> /etc/systemd/system/Gost364
 
 echo "[Install]" >> /etc/systemd/system/Gost3644.service
 echo "WantedBy=multi-user.target" >> /etc/systemd/system/Gost3644.service
+
+systemctl enable Gost3644.service
+systemctl stop Gost3644.service
+systemctl start Gost3644.service
 
 
 ip link add link eth0 name eth0.2619 type vlan id 2619
@@ -172,7 +196,7 @@ echo "Description=My Gost2619 Service" >> /etc/systemd/system/Gost2619.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost2619.service
 
 echo "[Service]" >> /etc/systemd/system/Gost2619.service
-echo "ExecStart=/root/app/gost/gost -L 192.168.0.4:65500" >> /etc/systemd/system/Gost2619.service
+echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost2619.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost2619.service
 echo "Restart=always" >> /etc/systemd/system/Gost2619.service
 echo "User=root" >> /etc/systemd/system/Gost2619.service
@@ -180,6 +204,10 @@ echo "NetworkNamespacePath=/var/run/netns/ns2619" >> /etc/systemd/system/Gost261
 
 echo "[Install]" >> /etc/systemd/system/Gost2619.service
 echo "WantedBy=multi-user.target" >> /etc/systemd/system/Gost2619.service
+
+systemctl enable Gost2619.service
+systemctl stop Gost2619.service
+systemctl start Gost2619.service
 
 
 ip link add link eth0 name eth0.2160 type vlan id 2160
@@ -198,7 +226,7 @@ echo "Description=My Gost2160 Service" >> /etc/systemd/system/Gost2160.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost2160.service
 
 echo "[Service]" >> /etc/systemd/system/Gost2160.service
-echo "ExecStart=/root/app/gost/gost -L 192.168.0.3:65500" >> /etc/systemd/system/Gost2160.service
+echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost2160.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost2160.service
 echo "Restart=always" >> /etc/systemd/system/Gost2160.service
 echo "User=root" >> /etc/systemd/system/Gost2160.service
@@ -206,6 +234,10 @@ echo "NetworkNamespacePath=/var/run/netns/ns2160" >> /etc/systemd/system/Gost216
 
 echo "[Install]" >> /etc/systemd/system/Gost2160.service
 echo "WantedBy=multi-user.target" >> /etc/systemd/system/Gost2160.service
+
+systemctl enable Gost2160.service
+systemctl stop Gost2160.service
+systemctl start Gost2160.service
 
 
 ip link add link eth0 name eth0.1779 type vlan id 1779
@@ -224,7 +256,7 @@ echo "Description=My Gost1779 Service" >> /etc/systemd/system/Gost1779.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost1779.service
 
 echo "[Service]" >> /etc/systemd/system/Gost1779.service
-echo "ExecStart=/root/app/gost/gost -L 192.168.0.2:65500" >> /etc/systemd/system/Gost1779.service
+echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost1779.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost1779.service
 echo "Restart=always" >> /etc/systemd/system/Gost1779.service
 echo "User=root" >> /etc/systemd/system/Gost1779.service
@@ -232,3 +264,7 @@ echo "NetworkNamespacePath=/var/run/netns/ns1779" >> /etc/systemd/system/Gost177
 
 echo "[Install]" >> /etc/systemd/system/Gost1779.service
 echo "WantedBy=multi-user.target" >> /etc/systemd/system/Gost1779.service
+
+systemctl enable Gost1779.service
+systemctl stop Gost1779.service
+systemctl start Gost1779.service
