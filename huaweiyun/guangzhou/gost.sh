@@ -24,6 +24,12 @@ chmod +x /root/app/gost/gost
 systemctl enable VLANSet.service
 systemctl enable Gost.service
 
+systemctl start VLANSet.service
+systemctl start Gost.service
+
+systemctl stop VLANSet.service
+systemctl stop Gost.service
+
 
 apt-get update
 apt-get install -y supervisor
