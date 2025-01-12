@@ -21,6 +21,9 @@ wget -O /etc/systemd/system/Gost.service  https://gh-proxy.com/https://github.co
 chmod +x /root/app/gost/VLANSet.sh
 chmod +x /root/app/gost/gost
 
+systemctl enable VLANSet.service
+systemctl enable Gost.service
+
 
 apt-get update
 apt-get install -y supervisor
