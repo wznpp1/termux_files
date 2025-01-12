@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ip link add link eth0 name eth0.4041 type vlan id 4041
 ip netns add ns4041
 ip link set eth0.4041 netns ns4041
