@@ -5,7 +5,8 @@ After=network.target
 [Service]
 ExecStart=/bin/bash /root/app/gost/VLANSet.sh
 WorkingDirectory=/root/app/gost/
-Restart=always
+Type=simple
+RemainAfterExit=true
 User=user
 Group=user
 
