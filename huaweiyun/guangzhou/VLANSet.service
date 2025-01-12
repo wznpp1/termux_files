@@ -9,6 +9,8 @@ Type=simple
 RemainAfterExit=true
 User=user
 Group=user
+Storage=persistent
+JournalDir=/root/app/gost/
 
 [Install]
 WantedBy=multi-user.target
