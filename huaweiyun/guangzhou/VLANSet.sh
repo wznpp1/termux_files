@@ -268,3 +268,21 @@ echo "WantedBy=multi-user.target" >> /etc/systemd/system/Gost1779.service
 systemctl enable Gost1779.service
 systemctl stop Gost1779.service
 systemctl start Gost1779.service
+
+
+echo "[Unit]" > /etc/systemd/system/Gost1.service
+echo "Description=My Gost1 Service" >> /etc/systemd/system/Gost1.service
+echo "After=VLANSet.target" >> /etc/systemd/system/Gost1.service
+
+echo "[Service]" >> /etc/systemd/system/Gost1.service
+echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost1.service
+echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost1.service
+echo "Restart=always" >> /etc/systemd/system/Gost1.service
+echo "User=root" >> /etc/systemd/system/Gost1.service
+
+echo "[Install]" >> /etc/systemd/system/Gost1.service
+echo "WantedBy=multi-user.target" >> /etc/systemd/system/Gost1.service
+
+systemctl enable Gost1.service
+systemctl stop Gost1.service
+systemctl start Gost1.service
