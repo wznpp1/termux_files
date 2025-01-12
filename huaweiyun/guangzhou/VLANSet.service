@@ -8,6 +8,7 @@ WorkingDirectory=/root/app/gost/
 Type=oneshot
 RemainAfterExit=yes
 Restart=no 
+User=root
 
 
 [Install]
