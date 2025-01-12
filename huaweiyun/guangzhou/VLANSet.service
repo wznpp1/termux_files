@@ -1,0 +1,13 @@
+[Unit]
+Description=My VLAN Set Service
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /root/app/gost/VLANSet.sh
+WorkingDirectory=/root/app/gost/
+Restart=always
+User=user
+Group=user
+
+[Install]
+WantedBy=multi-user.target
