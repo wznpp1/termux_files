@@ -14,7 +14,7 @@ echo "Description=My Gost4041 Service" >> /etc/systemd/system/Gost4041.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost4041.service
 
 echo "[Service]" >> /etc/systemd/system/Gost4041.service
-echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost4041.service
+echo "ExecStart=/root/app/gost/gost -L 192.168.0.10:65500" >> /etc/systemd/system/Gost4041.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost4041.service
 echo "Restart=always" >> /etc/systemd/system/Gost4041.service
 echo "User=root" >> /etc/systemd/system/Gost4041.service
@@ -40,7 +40,7 @@ echo "Description=My Gost1599 Service" >> /etc/systemd/system/Gost1599.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost1599.service
 
 echo "[Service]" >> /etc/systemd/system/Gost1599.service
-echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost1599.service
+echo "ExecStart=/root/app/gost/gost -L 192.168.0.9:65500" >> /etc/systemd/system/Gost1599.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost1599.service
 echo "Restart=always" >> /etc/systemd/system/Gost1599.service
 echo "User=root" >> /etc/systemd/system/Gost1599.service
@@ -66,7 +66,7 @@ echo "Description=My Gost4070 Service" >> /etc/systemd/system/Gost4070.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost4070.service
 
 echo "[Service]" >> /etc/systemd/system/Gost4070.service
-echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost4070.service
+echo "ExecStart=/root/app/gost/gost -L 192.168.0.8:65500" >> /etc/systemd/system/Gost4070.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost4070.service
 echo "Restart=always" >> /etc/systemd/system/Gost4070.service
 echo "User=root" >> /etc/systemd/system/Gost4070.service
@@ -92,7 +92,7 @@ echo "Description=My Gost1734 Service" >> /etc/systemd/system/Gost1734.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost1734.service
 
 echo "[Service]" >> /etc/systemd/system/Gost1734.service
-echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost1734.service
+echo "ExecStart=/root/app/gost/gost -L 192.168.0.7:65500" >> /etc/systemd/system/Gost1734.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost1734.service
 echo "Restart=always" >> /etc/systemd/system/Gost1734.service
 echo "User=root" >> /etc/systemd/system/Gost1734.service
@@ -118,7 +118,7 @@ echo "Description=My Gost569 Service" >> /etc/systemd/system/Gost569.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost569.service
 
 echo "[Service]" >> /etc/systemd/system/Gost569.service
-echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost569.service
+echo "ExecStart=/root/app/gost/gost -L 192.168.0.6:65500" >> /etc/systemd/system/Gost569.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost569.service
 echo "Restart=always" >> /etc/systemd/system/Gost569.service
 echo "User=root" >> /etc/systemd/system/Gost569.service
@@ -144,7 +144,7 @@ echo "Description=My Gost3644 Service" >> /etc/systemd/system/Gost3644.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost3644.service
 
 echo "[Service]" >> /etc/systemd/system/Gost3644.service
-echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost3644.service
+echo "ExecStart=/root/app/gost/gost -L 192.168.0.5:65500" >> /etc/systemd/system/Gost3644.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost3644.service
 echo "Restart=always" >> /etc/systemd/system/Gost3644.service
 echo "User=root" >> /etc/systemd/system/Gost3644.service
@@ -170,7 +170,7 @@ echo "Description=My Gost2619 Service" >> /etc/systemd/system/Gost2619.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost2619.service
 
 echo "[Service]" >> /etc/systemd/system/Gost2619.service
-echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost2619.service
+echo "ExecStart=/root/app/gost/gost -L 192.168.0.4:65500" >> /etc/systemd/system/Gost2619.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost2619.service
 echo "Restart=always" >> /etc/systemd/system/Gost2619.service
 echo "User=root" >> /etc/systemd/system/Gost2619.service
@@ -196,7 +196,7 @@ echo "Description=My Gost2160 Service" >> /etc/systemd/system/Gost2160.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost2160.service
 
 echo "[Service]" >> /etc/systemd/system/Gost2160.service
-echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost2160.service
+echo "ExecStart=/root/app/gost/gost -L 192.168.0.3:65500" >> /etc/systemd/system/Gost2160.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost2160.service
 echo "Restart=always" >> /etc/systemd/system/Gost2160.service
 echo "User=root" >> /etc/systemd/system/Gost2160.service
@@ -222,7 +222,7 @@ echo "Description=My Gost1779 Service" >> /etc/systemd/system/Gost1779.service
 echo "After=VLANSet.target" >> /etc/systemd/system/Gost1779.service
 
 echo "[Service]" >> /etc/systemd/system/Gost1779.service
-echo "ExecStart=/root/app/gost/gost -L :65500" >> /etc/systemd/system/Gost1779.service
+echo "ExecStart=/root/app/gost/gost -L 192.168.0.2:65500" >> /etc/systemd/system/Gost1779.service
 echo "WorkingDirectory=/root/app/gost/" >> /etc/systemd/system/Gost1779.service
 echo "Restart=always" >> /etc/systemd/system/Gost1779.service
 echo "User=root" >> /etc/systemd/system/Gost1779.service
