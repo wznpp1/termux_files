@@ -17,19 +17,13 @@ wget -O /root/app/gost/VLANSet.sh  https://gh-proxy.com/https://github.com/wznpp
 
 
 wget -O /etc/systemd/system/VLANSet.service  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/huaweiyun/guangzhou/VLANSet.service
-wget -O /etc/systemd/system/Gost.service  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/huaweiyun/guangzhou/Gost.service
 
 chmod +x /root/app/gost/VLANSet.sh
 chmod +x /root/app/gost/gost
 
 systemctl enable VLANSet.service
-systemctl enable Gost.service
-
 systemctl start VLANSet.service
-systemctl start Gost.service
-
 systemctl stop VLANSet.service
-systemctl stop Gost.service
 
 
 apt-get update
