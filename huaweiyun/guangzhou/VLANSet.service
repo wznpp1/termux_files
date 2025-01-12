@@ -7,6 +7,10 @@ ExecStart=/bin/bash /root/app/gost/VLANSet.sh
 WorkingDirectory=/root/app/gost/
 Type=simple
 RemainAfterExit=true
+
+Restart=no 
+StandardOutput=journal
+StandardError=journal
 Storage=persistent
 JournalDir=/root/app/gost/
 
