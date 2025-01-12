@@ -6,10 +6,7 @@ After=VLANSet.target
 ExecStart=/root/app/gost/gost -C /root/app/gost/001.yaml
 WorkingDirectory=/root/app/gost/
 Restart=always
-User=user
-Group=user
-Storage=persistent
-JournalDir=/root/app/gost/
+User=root
 
 [Install]
 WantedBy=multi-user.target
