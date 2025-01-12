@@ -14,8 +14,9 @@ tar -zxvf gost_3.0.0_linux_amd64.tar.gz
 
 wget -O /root/app/gost/001.yaml  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/huaweiyun/guangzhou/001.yaml
 wget -O /root/app/gost/VLANSet.sh  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/huaweiyun/guangzhou/VLANSet.sh
-wget -O /etc/systemd/system/VLANSet.service  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/huaweiyun/guangzhou/VLANSet.service
 
+
+wget -O /etc/systemd/system/VLANSet.service  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/huaweiyun/guangzhou/VLANSet.service
 wget -O /etc/systemd/system/Gost.service  https://gh-proxy.com/https://github.com/wznpp1/termux_files/raw/main/huaweiyun/guangzhou/Gost.service
 
 chmod +x /root/app/gost/VLANSet.sh
